@@ -34,7 +34,7 @@ public class Sala {
 
             for (int j = 1; j <= asientosPorFila; j++) {
                 // Se asume que el Asiento recibe (filaLetra, numero, estado)
-                listSalaAsientos.add(new Asiento(fila, j, EstadoAsiento.DISPONIBLE));
+                listSalaAsientos.add(new Asiento(fila, j, EstadoAsiento.DISPONIBLE,));
             }
         }
     }
