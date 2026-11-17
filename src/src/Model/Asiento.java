@@ -1,10 +1,14 @@
+package Model;
+
+import Enums.EstadoAsiento;
+
 public class Asiento {
     public int codigoAsiento;
-    public int fila;
+    public String fila;
     public int numero;
     public EstadoAsiento estadoAsiento;
 
-    public Asiento(int codigoAsiento, int fila, int numero, EstadoAsiento estadoAsiento) {
+    public Asiento(int codigoAsiento, String fila, int numero, EstadoAsiento estadoAsiento) {
         this.codigoAsiento = codigoAsiento;
         this.fila = fila;
         this.numero = numero;
@@ -19,11 +23,11 @@ public class Asiento {
         this.codigoAsiento = codigoAsiento;
     }
 
-    public int getFila() {
+    public String getFila() {
         return fila;
     }
 
-    public void setFila(int fila) {
+    public void setFila(String fila) {
         this.fila = fila;
     }
 
@@ -45,7 +49,7 @@ public class Asiento {
 
     @Override
     public String toString() {
-        return "Asiento{" +
+        return "Model.Asiento{" +
                 "codigoAsiento=" + codigoAsiento +
                 ", fila=" + fila +
                 ", numero=" + numero +

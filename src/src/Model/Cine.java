@@ -1,3 +1,7 @@
+package Model;
+
+import Enums.*;
+
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.*;
@@ -178,7 +182,7 @@ public class Cine {
      * Demostrar que una funcion esta duplicada,
      * Demostrar que una sala no se encuentra reigstrada,
      * Demostrar que la pelicula no se encuentra registrada,
-     * Demostrar que la Sala declarada no se encuentra disponible en el momento
+     * Demostrar que la Model.Sala declarada no se encuentra disponible en el momento
      * @param funcion
      * @throws FuncionDuplicadaException
      * @throws SalaNoEncontradaException
@@ -746,7 +750,7 @@ public class Cine {
 
     @Override
     public String toString() {
-        return "Cine{nombre='" + nombre + "', nit=" + nit
+        return "Model.Cine{nombre='" + nombre + "', nit=" + nit
                 + ", telefono=" + telefono + ", direccion='" + direccion
                 + "', peliculas=" + peliculas.size() + ", salas=" + salas.size()
                 + ", funciones=" + funciones.size() + ", clientes=" + clientes.size()

@@ -1,10 +1,14 @@
+package Model;
+
+import Enums.TipoCliente;
+
 public class Cliente {
     private String documento;
     private String nombre;
     private TipoCliente tipoCliente;
 
     /**
-     * Metodo constructor de la clase Cliente
+     * Metodo constructor de la clase Model.Cliente
      * @param documento del cliente
      * @param nombre del cliente
      * @param tipoCliente del cliente
@@ -41,7 +45,7 @@ public class Cliente {
 
     @Override
     public String toString() {
-        return "Cliente{" +
+        return "Model.Cliente{" +
                 "documento='" + documento + '\'' +
                 ", nombre='" + nombre + '\'' +
                 ", tipoCliente=" + tipoCliente +

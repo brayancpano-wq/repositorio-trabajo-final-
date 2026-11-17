@@ -1,10 +1,15 @@
+package Model;
+
+import Enums.EstadoAsiento;
+import Enums.EstadoSala;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Sala {
 
     // --- ATRIBUTOS ---
-    private String codigo
+    private String codigo;
     private String nombre;
     private int capacidadMaxima;
     private EstadoSala estadoSala;
@@ -31,10 +36,10 @@ public class Sala {
         for (int i = 0; i < filas; i++) {
             // Convierte el número 0, 1, 2... en letra 'A', 'B', 'C'...
             String fila = String.valueOf((char) ('A' + i));
-
+            int codigoAsiento = 1;
             for (int j = 1; j <= asientosPorFila; j++) {
-                // Se asume que el Asiento recibe (filaLetra, numero, estado)
-                listSalaAsientos.add(new Asiento(fila, j, EstadoAsiento.DISPONIBLE,));
+                // Se asume que el Model.Asiento recibe (filaLetra, numero, estado)
+                listSalaAsientos.add(new Asiento(codigoAsiento,fila, j, EstadoAsiento.DISPONIBLE));
             }
         }
     }
@@ -43,7 +48,7 @@ public class Sala {
      * Método que permite buscar un asiento específico.
      * @param fila Fila solicitada (Ej: "A").
      * @param numero Número solicitado (Ej: 3).
-     * @return Asiento encontrado o null si no existe.
+     * @return Model.Asiento encontrado o null si no existe.
      */
     public Asiento buscarAsiento(String fila, int numero) {
         Asiento encontrado = null;
@@ -100,7 +105,7 @@ public class Sala {
 
     @Override
     public String toString() {
-        return "Sala{" +
+        return "Model.Sala{" +
                 "codigo='" + codigo + '\'' +
                 ", nombre='" + nombre + '\'' +
                 ", capacidadMaxima=" + capacidadMaxima +

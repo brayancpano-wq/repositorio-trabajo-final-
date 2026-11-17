@@ -1,4 +1,4 @@
-package exepciones;
+package Excepciones;
 
 public class VentaNoEncontradaException extends Exception {
     public VentaNoEncontradaException(String message) {

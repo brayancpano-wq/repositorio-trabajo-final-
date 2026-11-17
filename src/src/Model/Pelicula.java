@@ -1,3 +1,8 @@
+package Model;
+
+import Enums.Clasificacion;
+import Enums.EstadoPelicula;
+
 public class Pelicula{
     private int codigo;
     private String nombre;
@@ -7,7 +12,7 @@ public class Pelicula{
     private EstadoPelicula estadoPelicula;
 
     /**
-     * Metodo constructor de la clase Pelicula
+     * Metodo constructor de la clase Model.Pelicula
      * @param codigo de la pelicula
      * @param nombre de la pelicula
      * @param genero de la pelicula
@@ -75,7 +80,7 @@ public class Pelicula{
 
     @Override
     public String toString() {
-        return "Pelicula{" +
+        return "Model.Pelicula{" +
                 "codigo=" + codigo +
                 ", nombre='" + nombre + '\'' +
                 ", genero='" + genero + '\'' +
