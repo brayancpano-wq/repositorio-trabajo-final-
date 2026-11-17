@@ -1,6 +1,7 @@
 package Model;
 
 import Enums.EstadoAsiento;
+import java.util.Objects;
 
 public class Asiento {
     public int codigoAsiento;
@@ -45,6 +46,23 @@ public class Asiento {
 
     public void setEstadoAsiento(EstadoAsiento estadoAsiento) {
         this.estadoAsiento = estadoAsiento;
+    }
+
+    @Override
+    public boolean equals(Object object) {
+        if (this == object) {
+            return true;
+        }
+        if (!(object instanceof Asiento)) {
+            return false;
+        }
+        Asiento asiento = (Asiento) object;
+        return codigoAsiento == codigoAsiento;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(codigoAsiento);
     }
 
     @Override
