@@ -1,5 +1,7 @@
 package Model;
 
+import Enums.TipoCliente;
+
 public class Tarifa {
 
     private TipoCliente tipoCliente;

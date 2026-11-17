@@ -6,7 +6,7 @@ import Enums.EstadoSala;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Sala {
+public class  Sala {
 
     // --- ATRIBUTOS ---
     private String codigo;

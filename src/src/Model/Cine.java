@@ -1,5 +1,6 @@
 package Model;
 
+import Excepciones.*;
 import Enums.*;
 
 import java.time.LocalDate;
