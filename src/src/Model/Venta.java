@@ -1,3 +1,7 @@
+package Model;
+
+import Enums.EstadoVenta;
+
 public class Venta {
     public String codigo;
     public String fecha;
@@ -55,7 +59,7 @@ public class Venta {
 
     @Override
     public String toString() {
-        return "Venta{" +
+        return "Model.Venta{" +
                 "codigo='" + codigo + '\'' +
                 ", fecha='" + fecha + '\'' +
                 ", hora='" + hora + '\'' +
